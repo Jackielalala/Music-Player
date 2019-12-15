@@ -1,0 +1,57 @@
+@import './common.css';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.musicBox {
+
+    height: 150px;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4);
+    padding: 10px;
+}
+.intro {
+    position: relative;
+}
+.song {
+    padding: 5px;
+}
+.singer {
+    padding: 5px;
+}
+.btn {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.btn .iconfont {
+    cursor:pointer;
+}
+.progress {
+    border: 1px dotted;
+    width: 250px;
+    margin: 5px;
+    margin-top: 10px;
+    height: 5px;
+    position: relative;
+}
+.currentProgress {
+    position: absolute;
+    height: 5px;
+    background-color: pink;
+    width: 0;
+}
+.time {
+    float:right;
+    padding-right: 30px;
+}
+.clearFloat::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
